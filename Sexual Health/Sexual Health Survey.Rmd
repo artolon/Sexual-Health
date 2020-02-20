@@ -1,0 +1,44 @@
+---
+title: "Sexual Health Survey"
+author: "Abbie Tolon"
+date: "2/20/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install and Load Applicable Packages
+
+```{r, echo=TRUE, results='hide'}
+#To update RStudio 
+#install.packages("installr")
+#library("installr")
+#updateR()
+
+#NOTE: Cannot install Tidyverse or ggplot because this is version 3.6.1; I do not have permission sets to change it to version 3.6.2
+
+#Install Packages
+#install.packages("ggplot2", "haven", "labelled", "magrittr", "readxl", "writexl", "dplyr")
+
+#Load Libraries
+library(ggplot2) # for data visualization 
+library(haven) # for reading Stata files
+library(labelled) # for working with variable labels
+library(magrittr) # for extra %$% pipe operator
+library(readxl) # for reading the excel file
+library(writexl) # for saving something as an Excel file
+library(dplyr) # gives rename function
+```
+
+## Import Excel file with RedCap Data
+
+The following file was first exported from RedCap. Next, all incomplete cases (due to printing errors) were removed from the data set. The complete cases will now be imported into R Studio for further analysis and visualization. 
+
+```{r, echo=TRUE, results='hide'}
+
+
+```
+
+
